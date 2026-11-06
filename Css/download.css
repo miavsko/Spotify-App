@@ -1,0 +1,586 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: black;
+    min-height: 75px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo h2,
+.footer-logo h2 {
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.login-btn {
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(135deg, #212121, #333333);
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 550px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.small-heading {
+    color: #1ed760;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    color: #b3b3b3;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #1ed760;
+    color: black;
+    padding: 16px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #3be477;
+    transform: scale(1.04);
+}
+
+.download-note {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.web-player {
+    display: inline-block;
+    color: #1ed760;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.web-player:hover {
+    text-decoration: underline;
+}
+
+.app-preview {
+    background-color: #181818;
+    width: 48%;
+    max-width: 520px;
+    border: 1px solid #444444;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px #00000055;
+}
+
+.preview-top {
+    background-color: #242424;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview-top h3 {
+    font-size: 17px;
+}
+
+.preview-content {
+    display: flex;
+    min-height: 250px;
+}
+
+.preview-sidebar {
+    background-color: #101010;
+    width: 125px;
+    padding: 25px 15px;
+}
+
+.preview-sidebar p {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.preview-main {
+    padding: 25px 15px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-content: flex-start;
+}
+
+.preview-main h2 {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.preview-card {
+    background-color: #282828;
+    width: 30%;
+    min-width: 75px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.album {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+.purple {
+    background: linear-gradient(135deg, #673ab7, #d500f9);
+}
+
+.green {
+    background: linear-gradient(135deg, #00695c, #1ed760);
+}
+
+.pink {
+    background: linear-gradient(135deg, #ad1457, #f48fb1);
+}
+
+.preview-card p {
+    font-size: 11px;
+}
+
+.preview-player {
+    background-color: #242424;
+    border-top: 1px solid #444444;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.features {
+    text-align: center;
+    padding: 80px 7%;
+}
+
+.features h2,
+.installation h2,
+.mobile h2,
+.help h2 {
+    font-size: 34px;
+}
+
+.section-text {
+    color: #b3b3b3;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.feature-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.feature-card {
+    background-color: #242424;
+    padding: 35px 25px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.feature-card h1 {
+    color: #1ed760;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.installation {
+    background-color: #181818;
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    gap: 25px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.step-card {
+    background-color: #242424;
+    padding: 30px 25px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: left;
+}
+
+.step-card h1 {
+    color: #1ed760;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.step-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.second-download {
+    margin-top: 10px;
+}
+
+.mobile {
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.mobile-icon {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    background: linear-gradient(135deg, #1ed760, #a8f5c5);
+    color: black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-icon h1 {
+    font-size: 90px;
+}
+
+.mobile-content {
+    max-width: 550px;
+}
+
+.mobile-content p {
+    color: #b3b3b3;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.mobile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.mobile-links a {
+    color: #1ed760;
+    border: 1px solid #1ed760;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.mobile-links a:hover {
+    background-color: #1ed760;
+    color: black;
+}
+
+.help {
+    background-color: #242424;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.help p {
+    color: #b3b3b3;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: 20px auto 30px;
+}
+
+.support-btn {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 13px 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.support-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    background-color: black;
+    padding: 60px 7% 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-column h4 {
+    color: #919191;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #333333;
+    margin-bottom: 25px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.copyright {
+    color: #b3b3b3;
+    text-align: right;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app-preview {
+        width: 100%;
+        max-width: 600px;
+        align-self: center;
+    }
+
+    .feature-list,
+    .steps {
+        flex-wrap: wrap;
+    }
+
+    .feature-card,
+    .step-card {
+        min-width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+    .app-preview {
+        width: 100%;
+    }
+
+    .preview-sidebar {
+        width: 85px;
+        padding: 20px 10px;
+    }
+
+    .preview-main {
+        padding: 20px 10px;
+    }
+
+    .preview-card {
+        min-width: 65px;
+    }
+
+    .album {
+        height: 55px;
+    }
+
+    .features,
+    .installation {
+        padding: 55px 20px;
+    }
+
+    .features h2,
+    .installation h2,
+    .mobile h2,
+    .help h2 {
+        font-size: 27px;
+    }
+
+    .feature-list,
+    .steps {
+        flex-direction: column;
+    }
+
+    .feature-card,
+    .step-card {
+        width: 100%;
+    }
+
+    .mobile {
+        padding: 55px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .mobile-icon {
+        width: 130px;
+        height: 130px;
+        min-width: 130px;
+    }
+
+    .mobile-icon h1 {
+        font-size: 65px;
+    }
+
+    .mobile-links {
+        justify-content: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        gap: 15px;
+    }
+
+    .copyright {
+        text-align: left;
+    }
+}
